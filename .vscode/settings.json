@@ -1,0 +1,38 @@
+{
+  // Theme
+  // "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye - Dracula version",
+
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "javascript.validate.enable": false, //disable all built-in syntax checking
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'cascadia code','Operator Mono',Consolas, 'Courier New', monospace",
+  "editor.lineHeight": 30,
+  "editor.fontWeight": "300",
+  "editor.cursorBlinking": "expand",
+  "terminal.integrated.fontWeight": "200",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.renderWhitespace": "none"
+}
