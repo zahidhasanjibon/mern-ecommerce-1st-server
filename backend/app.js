@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path')
 const cookieParser = require('cookie-parser');
 const fileUpload = require("express-fileupload")
+const cors = require("cors")
 
 if (process.env.NODE_ENV !== "PRODUCTION") {
     // config
@@ -13,6 +14,7 @@ app.use(express.json({limit: "50mb"}));
 app.use(express.urlencoded({ limit: "50mb",extended: true }));
 app.use(cookieParser());
 app.use(fileUpload())
+app.use(cors())
 
 // internal import
 const errorHandler = require('./middlewares/error');
